@@ -69,7 +69,9 @@ Before you begin, ensure you have the following installed:
     npm install
     ```
     **Start the frontend development server:**
+    ```bash
     npm start
+    ```
     The frontend application will be accessible at http://localhost:3000.
 
 ### API Endpoints
