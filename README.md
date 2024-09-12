@@ -33,62 +33,67 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the Repository**
 
+    ```bash
     git clone https://github.com/your-username/personal-task-manager.git
     cd personal-task-manager
+    ```
 
 2.  **Set Up the Backend**
 
     Navigate to the backend directory and install the dependencies:
 
-         ```bash
-         cd backend
-         npm install
-         ```
+    ```bash
+    cd backend
+    npm install
+    ```
 
     Create a .env file in the backend directory with the following environment variables:
 
-         MONGODB_URI=your_mongodb_connection_string
-         REDIS_URL=your_redis_connection_string
+    ```bash
+    MONGODB_URI=your_mongodb_connection_string
+    REDIS_URL=your_redis_connection_string
+    ```
 
-     <!-- BULLMQ_REDIS_URL=your_bullmq_redis_connection_string -->
+    <!-- BULLMQ_REDIS_URL=your_bullmq_redis_connection_string -->
 
-    Start the backend server:
+    **Start the backend server:**
 
-         npm start
+    ```bash
+    npm start
+    ```
 
 3.  **Set Up the Frontend**
-
     Navigate to the frontend directory and install the dependencies:
-
-        cd ../frontend
-        npm install
-
-    Start the frontend development server:
-
-        npm start
-        The frontend application will be accessible at http://localhost:3000.
+    ```bash
+    cd ../frontend
+    npm install
+    ```
+    **Start the frontend development server:**
+    npm start
+    The frontend application will be accessible at http://localhost:3000.
 
 ### API Endpoints
 
-- **Task Management**
+**Task Management**
 
-  _Create Task_
-  Endpoint: POST /tasks
-  Request Body: { "title": "Task title", "dueDate": "YYYY-MM-DDTHH:MM:SSZ" }
-  Response: 201 Created with task details.
+- **Create Task**
+  - **Endpoint:** POST /tasks
+  - **Request Body:** { "title": "Task title", "dueDate": "YYYY-MM-DDTHH:MM:SSZ" }
+  - **Response:** 201 Created with task details.
+- **Get Tasks**
 
-  _Get Tasks_
-  Endpoint: GET /tasks
-  Response: 200 OK with an array of tasks.
+  - **Endpoint:** GET /tasks
+  - **Response:** 200 OK with an array of tasks.
 
-  _Update Task_
-  Endpoint: PUT /tasks/:id
-  Request Body: { "title": "Updated task title", "dueDate": "YYYY-MM-DDTHH:MM:SSZ" }
-  Response: 200 OK with updated task details.
+- **Update Task**
 
-  _Delete Task_
-  Endpoint: DELETE /tasks/:id
-  Response: 204 No Content
+  - **Endpoint:** PUT /tasks/:id
+  - **Request Body:** { "title": "Updated task title", "dueDate": "YYYY-MM-DDTHH:MM:SSZ" }
+  - **Response:** 200 OK with updated task details.
+
+- **Delete Task**
+  - **Endpoint:** DELETE /tasks/:id
+  - **Response:** 204 No Content
 
 ### Reminders
 
@@ -101,9 +106,9 @@ The application uses BullMQ to manage reminders:
 
 **For deploying the application:**
 
-**Backend Deployment:** Host the backend server on platforms like Heroku, AWS, or Azure.
-**Frontend Deployment:** Deploy the frontend to Vercel, Netlify, or similar services.
-Ensure that environment variables are correctly configured in the deployment environment.
+- **Backend Deployment:** Host the backend server on platforms like Heroku, AWS, or Azure.
+- **Frontend Deployment:** Deploy the frontend to Vercel, Netlify, or similar services.
+  Ensure that environment variables are correctly configured in the deployment environment.
 
 **Contributing**
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
@@ -112,6 +117,7 @@ Contributions are welcome! Please open an issue or submit a pull request if you 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Acknowledgments**
-**Chakra UI:** For providing a beautiful and accessible component library.
-**BullMQ:** For reliable task scheduling and management.
-**Redis:** For efficient caching
+
+- **Chakra UI:** For providing a beautiful and accessible component library.
+- **BullMQ:** For reliable task scheduling and management.
+- **Redis:** For efficient caching
