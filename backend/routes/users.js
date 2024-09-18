@@ -1,9 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const {createUser, verifyOtp, resendOtp, resetPassword, login} = require('../controllers/user');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const router = express.Router();
+
+router.post('/create', createUser);
+
+router.post('/verify_otp', verifyOtp);
+
+router.post('/resend_otp', resendOtp);
+
+router.post('/reset_password', resetPassword);
+
+router.post('/login', login);
 
 module.exports = router;

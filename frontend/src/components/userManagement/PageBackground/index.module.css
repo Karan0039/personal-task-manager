@@ -1,0 +1,44 @@
+.container {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    background: rgb(45, 229, 255);
+    background: linear-gradient(45deg, rgba(45, 229, 255, 1) 0%, rgba(220, 91, 233, 1) 71%);
+
+}
+
+/* .rectangle1 {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -110px;
+    width: 200px;
+    border-radius: 10px;
+    height: 300px;
+    background: linear-gradient(314deg, rgb(64 233 255) 0%, rgb(228 153 235) 71%);
+    opacity: 0.5;
+    transform: rotate(333deg);
+} */
+
+/* .rectangle3 {
+    position: absolute;
+    margin-bottom: -20px;
+    margin-left: 50px;
+    width: 200px;
+    border-radius: 10px;
+    height: 300px;
+    background: linear-gradient(314deg, rgb(64 233 255) 0%, rgb(228 153 235) 71%);
+    opacity: 0.5;
+    transform: rotate(333deg);
+}
+
+.rectangle1 {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 200px;
+    border-radius: 10px;
+    height: 300px;
+    background: linear-gradient(314deg, rgb(64 233 255) 0%, rgb(228 153 235) 71%);
+    opacity: 0.5;
+    transform: rotate(333deg);
+} */

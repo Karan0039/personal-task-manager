@@ -52,6 +52,7 @@ Before you begin, ensure you have the following installed:
     ```bash
     MONGODB_URI=your_mongodb_connection_string
     REDIS_URL=your_redis_connection_string
+    SEND_IN_BLUE_KEY=your_send_in_blue_api_key
     ```
 
     <!-- BULLMQ_REDIS_URL=your_bullmq_redis_connection_string -->
